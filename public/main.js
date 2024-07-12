@@ -18,6 +18,7 @@ const createRow = (rowData) => {
   const shortIdCell = document.createElement("td");
   const redirectLink = document.createElement("a");
   redirectLink.textContent = `url-shortener-3bbe.onrender.com/${shortid}`;
+  redirectLink.setAttribute("target", "_blank");
   redirectLink.href = `https://url-shortener-3bbe.onrender.com/${shortid}`;
 
   shortIdCell.appendChild(redirectLink);
