@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" /> 
+    <link rel ="stylesheet" href = "styles.css">
+</head>
+<body>
+    <h1 class="heading">URL Shortener</h1>
+    <form class = "input-url-form">
+        <h3 class ="form-header">Paste a long URL</h3>
+    <input type = "text" placeholder="  Example: https://very-long-link.com/shorten-it" class="url-input"/>
+    
+    <button type ="submit" class="btn-submit">Submit</button>
+    <div class="form-alert"></div>
+    </form>
+
+    <section class="url-display-container">
+        <p class="loading">Loading...</p>
+        <div class ="url-display">
+            <table class= "data-table">
+                <thead>
+                    <tr>
+                        <th>Input URL</th>
+                        <th>Short URL</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody class="data-table-body">
+                    <!--Table rows will be dynamically added here-->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="index.js"></script>
+</body>
+</html>
